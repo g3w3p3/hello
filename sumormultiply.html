@@ -1,0 +1,29 @@
+<html>
+<head> Add OR Multiply
+<body>
+<form>
+<script>
+        function add() {
+            var a = parseInt(document.getElementById('a').value);
+            var b = parseInt(document.getElementById('b').value);
+            r = a + b;
+            document.getElementById("result").innerHTML = a + " + " + b + " = " + r;
+        }
+        function mul() {
+            var a = parseInt(document.getElementById('a').value);
+            var b = parseInt(document.getElementById('b').value);
+            r = a * b;
+            document.getElementById("result").innerHTML = a + " * " + b + " = " + r;
+        }
+</script>
+        Enter number 1:
+        <input type="text" id="a" /><br />
+        Enter number 2:
+        <input type="text" id="b" /><br />
+        <input type="button" value="Add" onClick="add()" />
+        <input type="button" value="Multiply" onClick="mul()" />
+</form>
+		<p id="result"></p>
+</body>
+</head>
+</html>
